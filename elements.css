@@ -2,26 +2,32 @@
 	font-family: 'Ubuntu';
 }
 body{
-	background:url(https://unsplash.com/photos/9wVHyp90lgI);
+	background:url(images/Beach.jpg);
 	background-size: cover;
 	background-position: center;
 }
 html{
 	height: 100%;
 }
+.navbar-brand{
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 2rem;
+	font-weight: 500;
+}
+/*
 #content{
 	text-align:center;
-	padding-top: 30%;
+	padding-top: 26%;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3); 		 
 }
-h1{
-	font-family: 'Old Standard TT', serif;
-	color: white;
+ h1{
+	font-family: 'Cormorant Garamond', serif;
+	color: black;
 	font-weight: 500;
 	font-size: 5rem;
 }
 h3{
-	color: white;
+	color: black;
 	font-weight: 100;
 }
 hr{
@@ -29,9 +35,5 @@ hr{
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255,255,255,255), rgba(0, 0, 0, 0));
-}
+} */
 
-.navbar-brand{
-	font-family: 'Old Standard TT', serif;
-	font-size: 2rem;
-}
