@@ -1,15 +1,18 @@
 *{
 	font-family: 'Ubuntu';
 }
-body{
-	background:url(images/1.jpeg);
+/* body{
+	background:url("images/1.jpeg") repeat scroll center center / cover;;
 	background-size: cover;
 	background-position: 0 40%;
 	background-repeat: no-repeat;
-}
-html{
+	height: 100vh;
+  	width: 100%; 
+}*/
+
+/* html{
 	height: 100%;
-}
+} */
 .navbar-brand{
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 2rem;
@@ -18,13 +21,45 @@ html{
 .navbar-dark .navbar-brand{
 	color: black;
 }
-#content{
+#header {
+	background: url("images/1.jpeg") repeat scroll center center / cover;
+	height: 93vh;
+	width: 100%;
+  }
+#header .header-content {
+	height: 100vh;
+	text-align: left;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  }
+  
+.header-content h1 {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 500;
+	font-size: 4rem;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	color: #fff;
+}
+.header-content h3 {
+	font-size: 1.25rem;
+	font-weight: 100;
+	letter-spacing: 5px;
+	margin-top: 0;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	color: #fff;
+  }
+
+/* #content{
 	margin-left: 5%;
 	text-align: start;
 	padding-top: 20%;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3); 		 
-}
- h1{
+} */
+ /* h1{
 	font-family: 'Cormorant Garamond', serif;
 	color: white;
 	font-weight: 500;
@@ -33,27 +68,4 @@ html{
 h3{
 	color: white;
 	font-weight: 100;
-}
-hr{
-	width: 400px;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255,255,255,255), rgba(0, 0, 0, 0));
-}
-
-
-
-/* .nav-tabs .nav-item .nav-link.active {
-	color: rgb(255,255,255);
-	background-color: transparent;
-  }
-  .nav-tabs .nav-item .nav-link {
-	color: rgb(255, 255, 255);
-	border-bottom: transparent;
-  }
-
-.nav-tabs{
-	border-bottom-color: transparent;
-
 } */
-
