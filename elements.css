@@ -2,9 +2,10 @@
 	font-family: 'Ubuntu';
 }
 body{
-	background:url(images/Beach.jpg);
+	background:url(images/1.jpeg);
 	background-size: cover;
-	background-position: center;
+	background-position: 0 40%;
+	background-repeat: no-repeat;
 }
 html{
 	height: 100%;
@@ -14,20 +15,23 @@ html{
 	font-size: 2rem;
 	font-weight: 500;
 }
-/*
+.navbar-dark .navbar-brand{
+	color: black;
+}
 #content{
-	text-align:center;
-	padding-top: 26%;
+	margin-left: 5%;
+	text-align: start;
+	padding-top: 20%;
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3); 		 
 }
  h1{
 	font-family: 'Cormorant Garamond', serif;
-	color: black;
+	color: white;
 	font-weight: 500;
 	font-size: 5rem;
 }
 h3{
-	color: black;
+	color: white;
 	font-weight: 100;
 }
 hr{
@@ -35,5 +39,21 @@ hr{
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255,255,255,255), rgba(0, 0, 0, 0));
+}
+
+
+
+/* .nav-tabs .nav-item .nav-link.active {
+	color: rgb(255,255,255);
+	background-color: transparent;
+  }
+  .nav-tabs .nav-item .nav-link {
+	color: rgb(255, 255, 255);
+	border-bottom: transparent;
+  }
+
+.nav-tabs{
+	border-bottom-color: transparent;
+
 } */
 
