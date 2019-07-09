@@ -1,5 +1,5 @@
 *{
-	font-family: 'Ubuntu';
+	font-family: 'Ubuntu', sans-serif;
 }
 /* body{
 	background:url("images/1.jpeg") repeat scroll center center / cover;;
@@ -8,11 +8,26 @@
 	background-repeat: no-repeat;
 	height: 100vh;
   	width: 100%; 
-}*/
-
-/* html{
-	height: 100%;
 } */
+nav ul li a {
+	/* padding: 2px 0 0 0;
+	position: relative;
+	display: block;
+	font-size: 12px;
+	color: #999999;
+	letter-spacing: 0.1em;
+	font-weight: 500;
+	line-height: 14px;
+	text-transform: uppercase; */
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+  }
+html{
+	height: 100%;
+}
 .navbar-brand{
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 2rem;
@@ -22,7 +37,8 @@
 	color: black;
 }
 #header {
-	background: url("images/1.jpeg") repeat scroll center center / cover;
+	margin-top: 78px;
+	background: url("images/1.jpeg") no-repeat scroll center center / cover;
 	height: 93vh;
 	width: 100%;
   }
@@ -34,8 +50,99 @@
 	justify-content: center;
 	flex-direction: column;
   }
+  .paddsection{
+	padding-top: 90px;
+	padding-bottom: 90px;
+  }
+  /*-----------------------------------------------------------------------------------*/
+/*  Icon-bar
+/*-----------------------------------------------------------------------------------*/
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+	position: fixed;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+  }
   
-.header-content h1 {
+  /* Style the icon bar links */
+  .icon-bar a {
+	display: block;
+	text-align: center;
+	padding: 10px 8px;
+	transition: all 0.3s ease;
+	color: white;
+	font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+	background-color: #000;
+  }
+  
+  .facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  .twitter {
+	background: #55ACEE;
+	color: white;
+  }
+  
+  .instagram {
+	background: #f09433; 
+	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  }
+  
+  .linkedin {
+	background: #007bb5;
+	color: white;
+  }
+
+/*-----------------------------------------------------------------------------------*/
+/*  About-us
+/*-----------------------------------------------------------------------------------*/
+
+#about {
+	width: 100%;
+	height: auto;
+	background: #f7f7f7;
+	padding-top: 190px;
+  }
+  
+  #about .div-img-bg {
+	padding-bottom: 30px;
+	border: 15px solid #49093b;
+
+  }
+  
+  #about .div-img-bg .about-img img {
+	width: 100%;
+	box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+	margin-top: -60px;
+	margin-left: 40px;
+	height: 400px;
+	object-fit: cover;
+  }
+  
+  #about .about-descr .p-heading {
+	font-family: 'Playfair Display', serif;
+	font-size: 28px;
+	text-align: left;
+  }
+  
+  #about .about-descr .separator {
+	max-width: 80%;
+	margin-bottom: 0;
+	text-align: left;
+  }
+
+/* .header-content h1 {
 	font-family: 'Cormorant Garamond', serif;
 	font-weight: 500;
 	font-size: 4rem;
@@ -51,7 +158,7 @@
 	margin-left: 50px;
 	margin-bottom: 30px;
 	color: #fff;
-  }
+  } */
 
 /* #content{
 	margin-left: 5%;
