@@ -25,6 +25,7 @@ nav ul li a {
 	-webkit-transition: all 0.5s ease-in-out 0s;
 	transition: all 0.5s ease-in-out 0s;
   }
+
 html{
 	height: 100%;
 }
@@ -80,7 +81,10 @@ html{
   .icon-bar a:hover {
 	background-color: #000;
   }
-  
+  .github{
+	  background: #211f1f;
+	  color: white;
+  }
   .facebook {
 	background: #3B5998;
 	color: white;
@@ -114,7 +118,7 @@ html{
 	background: #f7f7f7;
 	padding-top: 190px;
   }
-  
+   
   #about .div-img-bg {
 	padding-bottom: 30px;
 	border: 15px solid #49093b;
