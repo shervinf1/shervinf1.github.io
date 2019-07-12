@@ -6,7 +6,7 @@
         <title>Shervin Firouzdehghan</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500&display=swap" rel="stylesheet">
@@ -43,11 +43,11 @@
 
         <!-- The social media icon bar -->
         <div class="icon-bar">
-                <a href="https://github.com/shervinf1" class="github"><i class="fa fa-github"></i></a> 
-                <a href="https://linkedin.com/in/shervinf" class="linkedin"><i class="fa fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/shervf/" class="instagram"><i class="fa fa-instagram"></i></a>
-                <a href="https://twitter.com/shervf" class="twitter"><i class="fa fa-twitter"></i></a> 
-                <a href="https://www.facebook.com/Shervinfirouz" class="facebook"><i class="fa fa-facebook"></i></a>                   
+                <a href="https://github.com/shervinf1" class="github"><i class="fab fa-github"></i></a> 
+                <a href="https://linkedin.com/in/shervinf" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/shervf/" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/shervf" class="twitter"><i class="fab fa-twitter"></i></a> 
+                <a href="https://www.facebook.com/Shervinfirouz" class="facebook"><i class="fab fa-facebook"></i></a>                   
          </div>
 
 		<!-- Header Section Begins -->
@@ -62,30 +62,80 @@
 		  <!-- start section about us -->
           <div id="about" class="paddsection">
                 <div class="container">
-                  <div class="row justify-content-between">
-
-                    <div class="col-lg-4 ">
+                  <div class="row justify-content-center text-center">
+                    
+                    <div class="col-10 col-lg-4 ">
                       <div class="div-img-bg">
                         <div class="about-img">
-                          <img src="images/myProfile.jpg" class="img-responsive" alt="shervin firouzdehghan picture">
+                          <img src="images/ProfileMe.jpg" class="img-responsive" alt="shervin firouzdehghan picture">
                         </div>
                       </div>
                     </div>
             
-                    <div class="col-lg-7">
+                    <div class="col-10 col-lg-7">
                       <div class="about-descr">
-            
                         <p class="p-heading">I'm a Computer Engineering undergraduate student from Universidad Ana G. Méndez at the Gurabo Campus in Puerto Rico. </p>
                         <p class="separator">Focused mostly on learning and teaching myself multilpe programming languages and becoming a well rounded Computer Engineer.</p>
-            
                       </div>
-            
                     </div>
+
                   </div>
                 </div>
               </div>
               <!-- end section about us -->
 
+              <div id="skills">
+                <div class="container">
+              <!-- Service carousel begins -->
+              <!-- <div id="skills-block" class="carousel slide" data-ride="carousel"> -->
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#skills" data-slide-to="0" class="active"></li>
+                  <li data-target="#skills" data-slide-to="1"></li>
+                  <li data-target="#skills" data-slide-to="2"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <i class="fab fa-html5"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, odio! </p>
+                  </div>
+                  <div class="carousel-item">
+                      <i class="fab fa-css3"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, odio! </p>
+                  </div>
+                  <div class="carousel-item">
+                      <i class="fab fa-java"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, odio! </p>
+                  </div>
+                  <div class="carousel-item">
+                      <i class="fab fa-js"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, odio! </p>
+                  </div>
+                  <div class="carousel-item">
+                      <i class="fab fa-android"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, odio! </p>
+                  </div>
+                  <div class="carousel-item">
+                      <i class="fab fa-html5"></i>
+                      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, odio! </p>
+
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#skills" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#skills" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+                </div>
+              <!-- </div> -->
+            </div>
+              <!-- Service Carouse ends -->
 
 
 
@@ -106,7 +156,7 @@
           (function($) {          
               $(document).ready(function(){                    
                   $(window).scroll(function(){                          
-                      if ($(this).scrollTop() > 100) {
+                      if ($(this).scrollTop() > 200) {
                           $('#menu').fadeIn(500);
                       } else {
                           $('#menu').fadeOut(500);

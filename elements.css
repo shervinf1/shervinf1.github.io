@@ -45,7 +45,7 @@ html{
   }
 .paddsection{
 	padding-top: 90px;
-	padding-bottom: 90px;
+	padding-bottom: 190px;
 }
   /*-----------------------------------------------------------------------------------*/
 /*  Icon-bar
@@ -107,7 +107,7 @@ html{
 #about {
 	width: 100%;
 	height: auto;
-	background: #f7f7f7;
+	background: white;
 	padding-top: 190px;
   }
    
@@ -130,10 +130,48 @@ html{
 	font-family: 'Playfair Display', serif;
 	font-size: 28px;
 	text-align: left;
+	margin-left: 10%;
   }
   
   #about .about-descr .separator {
 	max-width: 80%;
 	margin-bottom: 0;
 	text-align: left;
+	margin-left: 10%;
   }
+
+
+/*-----------------------------------------------------------------------------------*/
+/*  skills
+/*-----------------------------------------------------------------------------------*/
+
+  #skills {
+	background: #f5f0f0;
+	position: relative;
+	padding-bottom: 80px;
+	
+  }
+  .carousel-inner {
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+  }
+  .carousel-item i {
+
+	font-size: 44px;
+	color: #49093b;
+	line-height: 44px;
+  }
+  .carousel-item {
+	font-size: 25px;
+	color: #49093b;
+	line-height: 44px;
+	position: relative;
+	width: 100%;
+	display: none;
+	margin: 10px 0;
+  }
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
