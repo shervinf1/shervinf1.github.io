@@ -150,7 +150,7 @@ html{
   #skills {
 	background: #f5f0f0;
 	position: relative;
-	padding-bottom: 80px;
+
 	
   }
   .carousel-inner {
@@ -171,9 +171,13 @@ html{
 	position: relative;
 	width: 100%;
 	display: none;
-	margin: 10px 0;
+
   }
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
+}
+.carouselPaddsection{
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
