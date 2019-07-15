@@ -1,18 +1,65 @@
 
-/* 
-General properties 
-*/
+  /**********************************
+    General
+***********************************/
 
 body, html{
     height: 100%;
-
 }
-/* 
-Navbar*/
+  /**********************************
+    Media Queries for responsivness
+***********************************/
+#headerText{
+    font-size: 1.5rem;
+}
+#bottomHeaderText{
+    font-size: 1.0rem;
+}
+@media (min-width: 575.98px) { 
+    .typewriter h1{
+        font-size: 1.5rem;
+    }
+    #bottomHeaderText{
+        font-size: 1.0rem;
+    }
+}
+/*Small devices (landscape phones, less than 768px) */
+@media (min-width: 767.98px) { 
+    #headerText{
+        font-size: 2rem;
+    }
+    #bottomHeaderText{
+        font-size: 1.5rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (min-width: 991.98px) { 
+    #headerText{
+        font-size: 3.5rem;
+    }
+    #bottomHeaderText{
+        font-size: 1.75rem;
+    }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (min-width: 1199.98px) { 
+    #headerText{
+        font-size: 5rem;
+    }
+    #bottomHeaderText{
+        font-size: 2.0rem;
+    }
+}
+
+  /**********************************
+    Navbar
+***********************************/
 #menu {
     background-color: white; /* Black background color */
     position: fixed; /* Make it stick/fixed */
-    top: -73px; /* Hide the navbar 50 px outside of the top view */
+    top: -74px; /* Hide the navbar 50 px outside of the top view */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }
@@ -35,9 +82,7 @@ nav ul li a {
 nav a:hover{
     color: #E1803C;
 }
-html{
-	height: 100%;
-}
+
 .navbar-brand{
 	font-family: 'Cormorant Garamond', serif;
 	font-size: 2rem;
@@ -58,15 +103,14 @@ html{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /*Adjust as needed */
     font-family: 'Roboto Mono', monospace;
-    font-size: 5vw;
+    /* font-size: 5rem; */
     font-weight: 300;
     color: white;
     animation: 
-    typing 2.5s steps(40, end),
+    typing 2.5s steps(50, end),
     blink-caret .75s step-end infinite;
   } 
   .typewriter p{
-    font-size: 2vw;
     font-family: 'Roboto Mono', monospace;
     color: white;
   }
@@ -83,24 +127,9 @@ html{
   }
 
 
-
-/********* 
-    Header 
-************/
-/* #header p{
-    font-family: 'Roboto Mono', monospace;
-    color: white;
-} */
-/* #header h1{
-    font-family: 'Roboto Mono', monospace;
-    font-size: 4vw;
-    font-weight: 300;
-    color: white;
-} */
-
-/* 
-Individual h2 pero section 
-*/
+  /**********************************
+    Work, education and experience section properties
+***********************************/
 
 #aboutBg{
     background-color: #E1803C;
@@ -153,10 +182,9 @@ hr{
     line-height: 2;
 }
 
-/* Social Media Bar*/
-
-
-
+  /**********************************
+    Social media icon bar
+***********************************/
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
     z-index: 9999;
@@ -187,3 +215,4 @@ hr{
     background: black;
     color: white;
   }
+
