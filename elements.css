@@ -9,7 +9,13 @@ body, html{
 }
 /* 
 Navbar*/
-
+#menu {
+    background-color: white; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: -73px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
 .navbar{
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
 
@@ -41,7 +47,6 @@ html{
 #menu a:hover{
     color: #E1803C;
 }
-
 
   /**********************************
     Typewriter effect
