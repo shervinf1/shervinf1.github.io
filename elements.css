@@ -58,7 +58,7 @@ html{
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /*Adjust as needed */
     font-family: 'Roboto Mono', monospace;
-    font-size: 4vw;
+    font-size: 5vw;
     font-weight: 300;
     color: white;
     animation: 
@@ -66,6 +66,7 @@ html{
     blink-caret .75s step-end infinite;
   } 
   .typewriter p{
+    font-size: 2vw;
     font-family: 'Roboto Mono', monospace;
     color: white;
   }
@@ -152,9 +153,37 @@ hr{
     line-height: 2;
 }
 
-/* #about img{
-    height: 100vh;
-}
-body{
-    height: 100vh;
-} */
+/* Social Media Bar*/
+
+
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    z-index: 9999;
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  /* Style the icon bar links */
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Style the social media icons with color, if you want */
+  .icon-bar a:hover {
+    background-color: white;
+    color: #E1803C;
+  }
+  
+  .icon {
+    background: black;
+    color: white;
+  }
