@@ -1,9 +1,15 @@
-*{
-	font-family: 'Ubuntu', sans-serif;
+
+/* 
+General properties 
+*/
+
+body, html{
+    height: 100%;
+
 }
-  /*-----------------------------------------------------------------------------------*/
-/*  Navigation Bar
-/*-----------------------------------------------------------------------------------*/
+/* 
+Navbar*/
+
 .navbar{
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
 
@@ -11,7 +17,7 @@
 nav ul li a {
 	font-size: 12px;
 	color: black;
-	letter-spacing: 0.1em;
+	letter-spacing: 0.em;
 	font-weight: 500;
 	text-transform: uppercase;
 	-moz-transition: all 0.5s ease-in-out 0s;
@@ -19,6 +25,9 @@ nav ul li a {
 	-o-transition: all 0.5s ease-in-out 0s;
 	-webkit-transition: all 0.5s ease-in-out 0s;
 	transition: all 0.5s ease-in-out 0s;
+}
+nav a:hover{
+    color: #E1803C;
 }
 html{
 	height: 100%;
@@ -29,155 +38,118 @@ html{
 	font-weight: 500;
 	color: black;
 }
-  /*-----------------------------------------------------------------------------------*/
-/*  Header
-/*-----------------------------------------------------------------------------------*/
-#header {
-	background: url("images/1.jpeg") no-repeat scroll center center / cover;
-	height: 100vh;
-	width: 100%;
-  }
-#header .header-content {
-	height: 100vh;
-	/* text-align: left;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	flex-direction: column; */
-  }
-.paddsection{
-	padding-top: 90px;
-	padding-bottom: 190px;
+#menu a:hover{
+    color: #E1803C;
 }
-  /*-----------------------------------------------------------------------------------*/
-/*  Icon-bar
-/*-----------------------------------------------------------------------------------*/
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar {
-	position: fixed;
-	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
+
+
+  /**********************************
+    Typewriter effect
+***********************************/
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #E1803C; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /*Adjust as needed */
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vw;
+    font-weight: 300;
+    color: white;
+    animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  } 
+  .typewriter p{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+  }
+  /* The typing effect */
+   @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
   }
   
-  /* Style the icon bar links */
-  .icon-bar a {
-	display: block;
-	text-align: center;
-	padding: 10px 8px;
-	transition: all 0.3s ease;
-	color: white;
-	font-size: 20px;
-  }
-  
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
-	background-color: #000;
-  }
-  .github{
-	  background: #211f1f;
-	  color: white;
-  }
-  .facebook {
-	background: #3B5998;
-	color: white;
-  }
-  
-  .twitter {
-	background: #55ACEE;
-	color: white;
-  }
-  
-  .instagram {
-	background: #f09433; 
-	background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-	background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-  }
-  
-  .linkedin {
-	background: #007bb5;
-	color: white;
-  }
-
-/*-----------------------------------------------------------------------------------*/
-/*  About-us
-/*-----------------------------------------------------------------------------------*/
-
-#about {
-	width: 100%;
-	height: auto;
-	background: white;
-	padding-top: 190px;
-  }
-   
-  #about .div-img-bg {
-	padding-bottom: 30px;
-	border: 15px solid #49093b;
-
-  }
-  
-  #about .div-img-bg .about-img img {
-	width: 100%;
-	box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-	margin-top: -60px;
-	margin-left: 40px;
-	height: 400px;
-	object-fit: cover;
-  }
-  
-  #about .about-descr .p-heading {
-	font-family: 'Playfair Display', serif;
-	font-size: 28px;
-	text-align: left;
-	margin-left: 10%;
-  }
-  
-  #about .about-descr .separator {
-	max-width: 80%;
-	margin-bottom: 0;
-	text-align: left;
-	margin-left: 10%;
+   /* The typewriter cursor effect  */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #E1803C; }
   }
 
 
-/*-----------------------------------------------------------------------------------*/
-/*  skills
-/*-----------------------------------------------------------------------------------*/
 
-  #skills {
-	background: #f5f0f0;
-	position: relative;
+/********* 
+    Header 
+************/
+/* #header p{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+} */
+/* #header h1{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4vw;
+    font-weight: 300;
+    color: white;
+} */
 
-	
-  }
-  .carousel-inner {
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-  }
-  .carousel-item i {
+/* 
+Individual h2 pero section 
+*/
 
-	font-size: 44px;
-	color: #49093b;
-	line-height: 44px;
-  }
-  .carousel-item {
-	font-size: 25px;
-	color: #49093b;
-	line-height: 44px;
-	position: relative;
-	width: 100%;
-	display: none;
-
-  }
-.carousel-control.left,
-.carousel-control.right {
-  background-image: none;
+#aboutBg{
+    background-color: #E1803C;
+    height: 100vh;
 }
-.carouselPaddsection{
-	padding-top: 90px;
-	padding-bottom: 90px;
+#aboutBg h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 8vw;
 }
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.jumbotron{
+    background: url(images/5.jpg) no-repeat scroll center center / cover;
+    height: 100vh;
+}
+#profilePicture{
+    z-index: 9999;
+    vertical-align: middle;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+hr{
+    width: 50%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.692), rgba(0, 0, 0, 0));
+}
+#id{
+    height: 100%;
+}
+.sideContent h2{
+    color: black;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+.sideContent p{
+    color: black;
+    font-weight: 100;
+    size: 1.125rem;
+    line-height: 2;
+}
+
+/* #about img{
+    height: 100vh;
+}
+body{
+    height: 100vh;
+} */
