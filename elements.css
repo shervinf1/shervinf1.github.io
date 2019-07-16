@@ -63,13 +63,17 @@ body, html{
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }
+  /* .navbar .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
+} */
+
 .navbar{
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
 }
 nav ul li a {
 	font-size: 12px;
 	color: black;
-	letter-spacing: 0.em;
+	letter-spacing: 0.25em;
 	font-weight: 500;
 	text-transform: uppercase;
 	-moz-transition: all 0.5s ease-in-out 0s;
@@ -106,7 +110,7 @@ nav a:hover{
     font-weight: 300;
     color: white;
     animation: 
-    typing 2.5s steps(50, end),
+    typing 4.0s steps(80, end),
     blink-caret .75s step-end infinite;
   } 
   .typewriter p{
@@ -130,10 +134,10 @@ nav a:hover{
     Work, education and experience section properties
 ***********************************/
 
-#aboutBg{
+#BG{
     background-color: #E1803C;
 }
-#aboutBg h2{
+#BG h2{
     font-family: 'Dancing Script', cursive;
     font-size: 8vw;
 }
@@ -206,7 +210,7 @@ hr{
   
   /* Style the social media icons with color, if you want */
   .icon-bar a:hover {
-    background-color: black;
+    /* background-color: black; */
     color: #E1803C;
   }
   
