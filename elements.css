@@ -63,10 +63,6 @@ body, html{
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
   }
-  /* .navbar .navbar-toggler-icon {
-    background-image: url('https://mdbootstrap.com/img/svg/hamburger7.svg?color=BFE100');
-} */
-
 .navbar{
 	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
 }
@@ -74,7 +70,7 @@ nav ul li a {
 	font-size: 12px;
 	color: black;
 	letter-spacing: 0.25em;
-	font-weight: 500;
+	font-weight: 400;
 	text-transform: uppercase;
 	-moz-transition: all 0.5s ease-in-out 0s;
 	-ms-transition: all 0.5s ease-in-out 0s;
@@ -87,9 +83,9 @@ nav a:hover{
 }
 
 .navbar-brand{
-	font-family: 'Cormorant Garamond', serif;
+    font-family: 'Ubuntu', sans-serif;
 	font-size: 2rem;
-	font-weight: 500;
+	font-weight: 300;
 	color: black;
 }
 #menu a:hover{
@@ -105,8 +101,9 @@ nav a:hover{
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /*Adjust as needed */
-    font-family: 'Roboto Mono', monospace;
+    /* font-family: 'Roboto Mono', monospace; */
     /* font-size: 5rem; */
+    font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     color: white;
     animation: 
@@ -114,7 +111,7 @@ nav a:hover{
     blink-caret .75s step-end infinite;
   } 
   .typewriter p{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Ubuntu', sans-serif;
     color: white;
   }
   /* The typing effect */
