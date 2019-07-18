@@ -130,7 +130,9 @@ nav a:hover{
   /**********************************
     Work, education and experience section properties
 ***********************************/
-
+#education h5, h4{
+    font-weight: 400 !important;
+}
 #BG{
     background-color: #E1803C;
 }
