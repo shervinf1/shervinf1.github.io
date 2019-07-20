@@ -21,15 +21,16 @@
       
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav text-center">
-                    <li class="nav-item">
-                        <a class="nav-link px-3 active" href="#profile">About</a>
+                    <li class="dropdown pt-1  px-3"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="px-3 active" href=" #profile">Profile</a></li>
+                            <li><a class="px-3 active" href="#education">Education</a></li>
+                            <li><a class="px-3 active" href="#work">Work</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3 active" href="#">Software</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link border border-dark px-3 active" href="#contact">Contact</a>
-                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link px-3 active" href="#profile">About</a> </li> -->
+                    <li class="nav-item"> <a class="nav-link px-4 active" href="#software">Software</a> </li>
+                    <li class="nav-item"> <a class="nav-link border border-dark px-4 active" href="#contact">Contact</a> </li>
                 </ul>
             </div>
         </nav>
@@ -66,7 +67,7 @@
                         <div class="row justify-content-center">
                             <div class="col-10 col-lg-8 sideContent mb-md-0 py-5">
                                 <img id="profilePicture" src="images/me.jpg" alt="">
-                                <h2 class="mt-5">Shervin Firouzdehghan</h2>
+                                <h2 id="myName" class="mt-5">Shervin Firouzdehghan</h2>
                                 <br>
                                 <p class="lead">I am a computer engineering undergraduate student at Universidad Ana G. Mendez
                                     in Gurabo, mainly focused on learning about programming in and out of the classroom, whether 
@@ -134,7 +135,6 @@
                                             is focused on bringing certain tools to fellow collegues that may need to further their
                                             knowledge in the field pertaining to computer science and engineering. We do so by providing
                                             programming workshops, hackathons and company tours realted to the field.
-
                                         </p>
                                         <br>
                                         <h3>Universidad Ana G. Méndez</h3>
@@ -158,8 +158,47 @@
         </section>
         <!-- About section ends -->
 
-        
-
+        <!-- Software section begins -->
+        <section id="software">
+                <div class="row text-center align-items-center">
+                    <div id="BG" class="justify-content-center vertical-center col-md-6">
+                        <h2 class="display-2">Software</h2>
+                    </div> 
+                    <div class="col-md-6 text-center">
+                        <div class="row justify-content-center">
+                            <div class="col-10 col-lg-8 sideContent py-5">
+                                    <table class="table">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Title</th>
+                                                    <th scope="col">Description</th>
+                                                    <th scope="col">Language</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="https://github.com/shervinf1/shervinf1.github.io">Personal Website</a></td>
+                                                    <td>Lorem ipsum dolor sit amet.</td>
+                                                    <td>HTML</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://github.com/shervinf1/Library">Trivial Library Database</a></td>
+                                                    <td>Lorem ipsum dolor sit amet.</td>
+                                                    <td>Java</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="https://github.com/shervinf1/CourseScheduler">Course Scheduler</a></td>
+                                                    <td>Lorem ipsum dolor sit amet.</td>
+                                                    <td>C++</td>
+                                                </tr>
+                                            </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
 
 
         

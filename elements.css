@@ -130,6 +130,9 @@ nav a:hover{
   /**********************************
     Work, education and experience section properties
 ***********************************/
+#myName{
+    font-weight: 400 !important;
+}
 #education h5, h4{
     font-weight: 400 !important;
 }
@@ -218,3 +221,18 @@ hr{
     color: white;
   }
 
+
+
+
+
+
+
+
+
+/* Repo Table */
+#repoTable{
+    background-color: white;
+} 
+table, th, td {
+    border: 1px solid black;
+  }
