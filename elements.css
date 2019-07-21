@@ -237,18 +237,15 @@ hr{
     color: white;
   }
 
-
-
-
-
-
-
-
-
-/* Repo Table */
+/* 
+Repo Table 
+*/
 #repoTable{
     background-color: white;
 } 
 table, th, td {
     border: 1px solid black;
   }
+#software a{
+    color: black;
+}
