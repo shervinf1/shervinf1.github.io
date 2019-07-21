@@ -1,6 +1,3 @@
-$(window).load(function() {
-  $('.preloader').fadeOut('slow');
-});
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
