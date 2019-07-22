@@ -1,15 +1,15 @@
-
-  /**********************************
+/**********************************
     General
 ***********************************/
-
 body, html{
     height: 100%;
     /* Create smooth scrolling effect on all presses */
     scroll-behavior: smooth;
 }
 
-  /**********************************
+
+
+/**********************************
     Media Queries for responsivness
 ***********************************/
 #headerText{
@@ -56,7 +56,9 @@ body, html{
     }
 }
 
-  /**********************************
+
+
+/**********************************
     Navbar
 ***********************************/
 #menu {
@@ -95,6 +97,8 @@ nav a:hover{
     color: #E1803C;
 }
 
+
+
   /**********************************
     Typewriter effect
 ***********************************/
@@ -112,10 +116,13 @@ nav a:hover{
     animation: 
     typing 4.0s steps(80, end),
     blink-caret .75s step-end infinite;
+    background-attachment: fixed;
+    background-position: center;
   } 
   .typewriter p{
     font-family: 'Ubuntu', sans-serif;
     color: white;
+
   }
   /* The typing effect */
    @keyframes typing {
@@ -130,7 +137,9 @@ nav a:hover{
   }
 
 
-  /**********************************
+
+
+/**********************************
     Work, education and experience section properties
 ***********************************/
 #myName{
@@ -151,10 +160,6 @@ nav a:hover{
     margin-left: 0;
     margin-right: 0;
 }
-/* .jumbotron{
-    background: url(images/5.jpg) no-repeat scroll center center / cover;
-    height: 100vh;
-} */
 .parallax { 
     /* The image used */
     background: url(images/5.jpg);
@@ -202,7 +207,10 @@ hr{
     line-height: 2;
 }
 
-  /**********************************
+
+
+
+/**********************************
     Social media icon bar
 ***********************************/
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
@@ -237,9 +245,11 @@ hr{
     color: white;
   }
 
-/* 
-Repo Table 
-*/
+
+
+/**********************************
+Repository Table 
+***********************************/
 #repoTable{
     background-color: white;
 } 
