@@ -12,42 +12,55 @@ body, html{
 /**********************************
     Media Queries for responsivness
 ***********************************/
-#headerText{
-    font-size: 1.5rem;
-}
-#bottomHeaderText{
-    font-size: 1.0rem;
-}
-@media (min-width: 575.98px) { 
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) { 
     .typewriter h1{
-        font-size: 1.5rem;
+        font-size: 2.0rem;
     }
     #bottomHeaderText{
         font-size: 1.0rem;
     }
-}
-/*Small devices (landscape phones, less than 768px) */
-@media (min-width: 767.98px) { 
+    
+} 
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) { 
     #headerText{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     #bottomHeaderText{
         font-size: 1.5rem;
     }
-}
+    
 
-/* Medium devices (tablets, less than 992px) */
-@media (min-width: 991.98px) { 
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
     #headerText{
         font-size: 3.5rem;
     }
     #bottomHeaderText{
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
+    
+
 }
 
-/* Large devices (desktops, less than 1200px) */
-@media (min-width: 1199.98px) { 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+    #headerText{
+        font-size: 4rem;
+    }
+    #bottomHeaderText{
+        font-size: 2.0rem;
+    }
+
+    
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){
     #headerText{
         font-size: 5rem;
     }
@@ -55,8 +68,6 @@ body, html{
         font-size: 2.0rem;
     }
 }
-
-
 
 /**********************************
     Navbar
@@ -96,8 +107,6 @@ nav a:hover{
 #menu a:hover{
     color: #E1803C;
 }
-
-
 
   /**********************************
     Typewriter effect
@@ -150,6 +159,8 @@ nav a:hover{
 }
 #BG{
     background-color: #E1803C;
+    height: 100%;
+    height: 100vh;
 }
 #BG h2{
     font-family: 'Dancing Script', cursive;
@@ -259,3 +270,9 @@ table, th, td {
 #software a{
     color: black;
 }
+
+
+
+/*  */
+/* Contact Form */
+/*  */
