@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Shervin Firouzdehghan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400&display=swap" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="elements.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!-- Navigation bar begins -->
+        <nav id="menuDash" class="navbar fixed-top navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">Shervin Firouzdehghan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center">
+                    <li class="dropdown pt-1  px-3"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+                        <ul class="dropdown-menu text-center">
+                            <li><a class="px-3 active" href="index.html#profile">Profile</a></li>
+                            <li><a class="px-3 active" href="index.html#education">Education</a></li>
+                            <li><a class="px-3 active" href="index.html#work">Work</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link px-3 active" href="#profile">About</a> </li> -->
+                    <li class="nav-item"> <a class="nav-link px-4 active" href="index.html#software">Software</a> </li>
+                    <li class="nav-item mr-2"> <a class="nav-link border border-dark px-4 active" href="index.html#contact">Contact</a> </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--social media icon bar begins -->
+        <div class="icon-bar">
+            <a href="https://github.com/shervinf1" class="icon"><i class="fab fa-github"></i></a> 
+            <a href="https://www.linkedin.com/in/shervinf/" class="icon mt-0"><i class="fab fa-linkedin"></i></a> 
+        </div>
+        <!--social media icon bar ends -->
+        <!-- Header Begins -->
+        <section id="header">
+            <div class="jumbotron jumbotron-fluid vertical-center mb-0 parallax">
+                <div class="container text-center ">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5">
+                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                <div class="card-header">Welcome</div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="form-group"><label class="small mb-1" for="inputEmailAddress">Email</label><input class="form-control py-4" id="inputEmailAddress" type="email" placeholder="Enter email address" /></div>
+                                        <div class="form-group"><label class="small mb-1" for="inputPassword">Password</label><input class="form-control py-4" id="inputPassword" type="password" placeholder="Enter password" /></div>
+                                        <div class="form-group d-flex align-items-center justify-content-between mt-4 mb-0"><a class="btn btn-primary" onclick="login()" href="#">Login</a></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- Header ends -->
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <!-- Add Firebase products that you want to use -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+
+        <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyB-1pPXRfE0w7liDwa3OYJv5EKWnw2RiX8",
+            authDomain: "applicationtracker-b7fad.firebaseapp.com",
+            databaseURL: "https://applicationtracker-b7fad.firebaseio.com",
+            projectId: "applicationtracker-b7fad",
+            storageBucket: "applicationtracker-b7fad.appspot.com",
+            messagingSenderId: "391086932255",
+            appId: "1:391086932255:web:741d69f5689cdbdd25b02a",
+            measurementId: "G-VP2W0RT8CV"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        
+    </body>
+ </html>
+ 
