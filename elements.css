@@ -1,310 +1,366 @@
 /**********************************
     General
 ***********************************/
-body, html{
-    height: 100%;
-    /* Create smooth scrolling effect on all presses */
-    scroll-behavior: smooth;
+body,
+html {
+  height: 100%;
+  /* Create smooth scrolling effect on all presses */
+  scroll-behavior: smooth;
 }
-#dashboardPage{
-    padding-top: 74px;
+#dashboardPage {
+  padding-top: 74px;
 }
-
-
 
 /**********************************
     Media Queries for responsivness
 ***********************************/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) { 
-    .typewriter h1{
-        font-size: 2.0rem;
-    }
-    #bottomHeaderText{
-        font-size: 1.0rem;
-    }
-    
-} 
+@media only screen and (max-width: 600px) {
+  .typewriter h1 {
+    font-size: 2rem;
+  }
+  #bottomHeaderText {
+    font-size: 1rem;
+  }
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) { 
-    #headerText{
-        font-size: 2.5rem;
-    }
-    #bottomHeaderText{
-        font-size: 1.5rem;
-    }
-    
-
-} 
+@media only screen and (min-width: 600px) {
+  #headerText {
+    font-size: 2.5rem;
+  }
+  #bottomHeaderText {
+    font-size: 1.5rem;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) { 
-    #headerText{
-        font-size: 3.5rem;
-    }
-    #bottomHeaderText{
-        font-size: 1.5rem;
-    }
-    
-
+@media only screen and (min-width: 768px) {
+  #headerText {
+    font-size: 3.5rem;
+  }
+  #bottomHeaderText {
+    font-size: 1.5rem;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) { 
-    #headerText{
-        font-size: 4rem;
-    }
-    #bottomHeaderText{
-        font-size: 2.0rem;
-    }
-
-    
-} 
+@media only screen and (min-width: 992px) {
+  #headerText {
+    font-size: 4rem;
+  }
+  #bottomHeaderText {
+    font-size: 2rem;
+  }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px){
-    #headerText{
-        font-size: 5rem;
-    }
-    #bottomHeaderText{
-        font-size: 2.0rem;
-    }
+@media only screen and (min-width: 1200px) {
+  #headerText {
+    font-size: 5rem;
+  }
+  #bottomHeaderText {
+    font-size: 2rem;
+  }
 }
 
 /**********************************
     Navbar
 ***********************************/
 #menu {
-    background-color: white; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: -74px; /* Hide the navbar 50 px outside of the top view */
-    width: 100%; /* Full width */
-    transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  }
-  #menuLogin {
-    background-color: white; /* Black background color */
-    position: fixed; /* Make it stick/fixed */
-    top: -74px; /* Hide the navbar 50 px outside of the top view */
-    width: 100%; /* Full width */
-  }
-.navbar{
-	box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
+  background-color: white; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -74px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+#menuLogin {
+  background-color: white; /* Black background color */
+  position: fixed; /* Make it stick/fixed */
+  top: -74px; /* Hide the navbar 50 px outside of the top view */
+  width: 100%; /* Full width */
+}
+.navbar {
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
 }
 nav ul li a {
-	font-size: 12px;
-	color: black;
-	letter-spacing: 0.25em;
-	font-weight: 400;
-	text-transform: uppercase;
-	-moz-transition: all 0.5s ease-in-out 0s;
-	-ms-transition: all 0.5s ease-in-out 0s;
-	-o-transition: all 0.5s ease-in-out 0s;
-	-webkit-transition: all 0.5s ease-in-out 0s;
-	transition: all 0.5s ease-in-out 0s;
+  font-size: 12px;
+  color: black;
+  letter-spacing: 0.25em;
+  font-weight: 400;
+  text-transform: uppercase;
+  -moz-transition: all 0.5s ease-in-out 0s;
+  -ms-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
 }
-nav a:hover{
-    color: #E1803C;
-}
-
-.navbar-brand{
-    font-family: 'Ubuntu', sans-serif;
-	font-size: 2rem;
-	font-weight: 300;
-	color: black;
-}
-#menu a:hover{
-    color: #E1803C;
+nav a:hover {
+  color: #e1803c;
 }
 
-  /**********************************
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
+  color: black;
+}
+#menu a:hover {
+  color: #e1803c;
+}
+
+/**********************************
     Typewriter effect
 ***********************************/
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #E1803C; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /*Adjust as needed */
-    /* font-family: 'Roboto Mono', monospace; */
-    /* font-size: 5rem; */
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 300;
-    color: white;
-    animation: 
-    typing 4.0s steps(80, end),
-    blink-caret .75s step-end infinite;
-    background-attachment: fixed;
-    background-position: center;
-  } 
-  .typewriter p{
-    font-family: 'Ubuntu', sans-serif;
-    color: white;
-
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #e1803c; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /*Adjust as needed */
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-size: 5rem; */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: white;
+  animation: typing 4s steps(80, end), blink-caret 0.75s step-end infinite;
+  background-attachment: fixed;
+  background-position: center;
+}
+.typewriter p {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+}
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  /* The typing effect */
-   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  to {
+    width: 100%;
   }
-  
-   /* The typewriter cursor effect  */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #E1803C; }
+}
+
+/* The typewriter cursor effect  */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
-
-
-
+  50% {
+    border-color: #e1803c;
+  }
+}
 
 /**********************************
     Work, education and experience section properties
 ***********************************/
-#myName{
-    font-weight: 400 !important;
+#myName {
+  font-weight: 400 !important;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70px;
+  resize: vertical;
 }
-#education h5, h4{
-    font-weight: 400 !important;
+#myBio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 150px;
+  resize: vertical;
 }
-#BG{
-    background-color: #E1803C;
-    height: 100%;
-    height: 100vh;
+#education h5,
+h4 {
+  font-weight: 400 !important;
 }
-#BG h2{
-    font-family: 'Dancing Script', cursive;
-    font-size: 8vw;
+#BG {
+  background-color: #e1803c;
+  height: 100%;
+  height: 100vh;
 }
+#BG h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 8vw;
+}
+#sectionLabels {
+  font-family: "Dancing Script", cursive;
+  font-size: 8vw;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.parallax {
+  /* The image used */
+  background: url(images/5.jpg);
 
-.row{
-    margin-left: 0;
-    margin-right: 0;
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.parallax { 
-    /* The image used */
-    background: url(images/5.jpg);
-  
-    /* Set a specific height */
-    height: 100%; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-#profilePicture{
-    z-index: 9999;
-    vertical-align: middle;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+#profilePicture {
+  z-index: 9999;
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 .vertical-center {
-    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-    min-height: 100vh; /* These two lines are counted as one :-)       */
-    display: flex;
-    align-items: center;
-  }
-hr{
-    width: 50%;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.692), rgba(0, 0, 0, 0));
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  display: flex;
+  align-items: center;
 }
-#id{
-    height: 100%;
+hr {
+  width: 50%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.692),
+    rgba(0, 0, 0, 0)
+  );
 }
-.sideContent h2{
-    color: black;
-    font-weight: 100;
-    font-size: 2.5rem;
+#id {
+  height: 100%;
 }
-.sideContent p{
-    color: black;
-    font-weight: 100;
-    size: 1.125rem;
-    line-height: 2;
+.sideContent h2 {
+  color: black;
+  font-weight: 100;
+  font-size: 2.5rem;
 }
-
-
-
+.sideContent p {
+  color: black;
+  font-weight: 100;
+  size: 1.125rem;
+  line-height: 2;
+}
 
 /**********************************
     Social media icon bar
 ***********************************/
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
-    box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
-    z-index: 9999;
-    position: fixed;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  
-  /* Style the icon bar links */
-  .icon-bar a {
-    display: block;
-    text-align: center;
-    padding: 15px 10px;
-    transition: all 0.3s ease;
-    color: black;
-    font-size: 20px;
-  }
-  
-  /* Style the social media icons with color, if you want */
-  .icon-bar a:hover {
-    /* background-color: black; */
-    color: #E1803C;
-  }
-  
-  .icon {
-    background: white;
-    color: white;
-  }
+  box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.14);
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 15px 10px;
+  transition: all 0.3s ease;
+  color: black;
+  font-size: 20px;
+}
 
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  /* background-color: black; */
+  color: #e1803c;
+}
+
+.icon {
+  background: white;
+  color: white;
+}
 
 /**********************************
 Repository Table 
 ***********************************/
-#repoTable{
-    background-color: white;
-} 
-table, th, td {
-    border: 1px solid black;
-  }
-#software a{
-    color: black;
+#repoTable {
+  background-color: white;
 }
-
-
+table,
+th,
+td {
+  border: 1px solid black;
+}
+#software a {
+  color: black;
+}
 
 /*  */
 /* Contact Form */
 /*  */
 
 #myInput {
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
 
-  table,
-  td,
-  th {
-    border-collapse: collapse;
+table,
+td,
+th {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border: solid 1px;
+  text-align: center;
+}
+
+#software .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0;
+}
+
+/* Create four equal columns that sits next to each other */
+#software .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 0;
+}
+
+#software .column img {
+  width: 150px; /* You can set the dimensions to whatever you want */
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  th,
-  td {
-    padding: 10px;
-    border: solid 1px;
-    text-align: center;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
+}
+
+#me {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  z-index: 9999;
+  vertical-align: middle;
+  border-radius: 50%;
+}
