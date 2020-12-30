@@ -107,3 +107,49 @@ function searchTable() {
     } 
   }
 }
+
+
+function onClick(element) {
+  var modal = document.getElementById("myModal");
+  var imageClicked = element.id;
+  // When the user clicks the button, open the modal 
+  if(imageClicked == "pImage1"){
+    document.getElementById("modalImage1").src = "images/hemsDash.png";
+    document.getElementById("modalImage2").src = "images/hemsLogin.png";
+    document.getElementById("modalImage3").src = "images/hemsChart.png";
+    document.getElementById("modalHeader").innerHTML = "HEMS Android"
+    document.getElementById("modalText").innerHTML = "Android application designed to monitor and control microgrid in a smart house for energy efficiency. Journal Summary: Security in an IoT network and a mobile application for micro-grids control & monitoring to minimize the waste of energy. Results was presented in the CIESESE 2020 Technical forum and in the CCWC 2020 IEEE";
+    document.getElementById("modalTextTech").innerHTML ="Tech used: Java, Firebase Firestore and Python";
+  }else if(imageClicked == "pImage2"){
+    document.getElementById("modalImage1").src = "images/webConsoleLogin.png";
+    document.getElementById("modalImage2").src = "images/webConsoleDashboard.png";
+    document.getElementById("modalImage3").src = "images/webConsoleDashboard2.png";
+    document.getElementById("modalHeader").innerHTML = "HEMS Web Console"
+    document.getElementById("modalText").innerHTML = "Web console version of HEMS for Android that is used to monitor and track your users and devices that are connected to pertaining users microgrid.";
+    document.getElementById("modalTextTech").innerHTML ="Tech used: JavaScript, HTML, CSS and Firebase Firestore";
+  }else if(imageClicked == "pImage3"){
+    document.getElementById("modalImage1").src = "images/BBStrengthLogin.jpg";
+    document.getElementById("modalImage2").src = "images/BBStrengthLift.jpg";
+    document.getElementById("modalImage3").src = "images/BBStrengthInLift.jpg";
+    document.getElementById("modalHeader").innerHTML = "BlackBook Strength"
+    document.getElementById("modalText").innerHTML = "Android application designed mainly for people that train using the 5 3 1 powerlifting philosophy that need a place to track there progress and calculate their next lifts. BlackBook Strength, among other features, also gives the user the ability to add assistance exercises, input their daily goal for calories and weightins but also track them. Application is fully scalable and allows the user to create and register their own account, with added functionality to reset password.";
+    document.getElementById("modalTextTech").innerHTML ="Tech used: Java and Firebase Firestore";
+  }else if(imageClicked == "pImage4"){
+    document.getElementById("modalImage1").src = "images/portfolioLandingPage.png";
+    document.getElementById("modalImage2").src = "images/pLogin.png";
+    document.getElementById("modalImage3").src = "images/pLanding2.png";
+    document.getElementById("modalHeader").innerHTML = "Personal Website"
+    document.getElementById("modalText").innerHTML = "This portfolio";
+    document.getElementById("modalTextTech").innerHTML ="Tech used: HTML, CSS, JavaScript and Firebase Firestore";
+  }
+
+  modal.style.display = "block";
+
+
+  
+}
+
+function spanClick(){
+  var modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
