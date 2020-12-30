@@ -198,6 +198,7 @@ h4 {
 
   /* Set a specific height */
   height: 100%;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
